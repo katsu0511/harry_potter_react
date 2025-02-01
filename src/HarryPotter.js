@@ -12,7 +12,7 @@ export default function HarryPotter() {
 
   return (
     <div>
-      <p>data</p>
+      <p>{data}</p>
     </div>
   );
 }
