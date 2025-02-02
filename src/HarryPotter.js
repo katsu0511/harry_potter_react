@@ -8,11 +8,21 @@ const fetchCharacters = async () => {
 
 export default function HarryPotter() {
 
-  const { data } = useQuery('weather', fetchCharacters);
+  const { data } = useQuery('characters', fetchCharacters);
+
+  const characters = [];
+  data.forEach((item) => {
+    characters.push(
+      <div>
+        <img src={item.image} alt={item.name} />
+        <p>{item.name}</p>
+      </div>
+    );
+  });
 
   return (
-    <div>
-      <p>{data}</p>
+    <div className='characters'>
+      {characters}
     </div>
   );
 }
