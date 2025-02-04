@@ -1,4 +1,5 @@
 import { useQuery } from 'react-query';
+import './HarryPotter.css';
 
 const fetchCharacters = async () => {
   const res = await fetch(`https://hp-api.onrender.com/api/characters`);
