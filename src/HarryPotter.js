@@ -8,9 +8,7 @@ const fetchCharacters = async () => {
 };
 
 export default function HarryPotter() {
-
   const { data } = useQuery('characters', fetchCharacters);
-
   const characters = [];
 
   data.forEach((item) => {
