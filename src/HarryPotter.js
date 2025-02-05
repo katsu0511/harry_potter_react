@@ -17,7 +17,9 @@ export default function HarryPotter() {
     characters.push(
       <div className='character' key={item.id}>
         <div className='top_info'>
-          <img src={item.image} alt={item.name} />
+          <div className='image_frame'>
+            <img src={item.image} alt={item.name} />
+          </div>
           <div className='details'>
             <h2>{item.name}</h2>
             <p>{item.gender}</p>
