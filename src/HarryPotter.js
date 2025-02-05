@@ -49,7 +49,9 @@ export default function HarryPotter() {
 
   return (
     <main>
-      <h1>Harry Potter characters</h1>
+      <header>
+        <h1>Harry Potter characters</h1>
+      </header>
       <section className='characters'>{characters}</section>
     </main>
   );
