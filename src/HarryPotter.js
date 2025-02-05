@@ -36,12 +36,19 @@ export default function HarryPotter() {
           <p>Hair Color: {item.hairColour}</p>
           <p>Actor: {item.actor}</p>
           <p>Patronus: {item.patronus}</p>
-          <h4>Wand</h4>
-          <ul>
-            <li>{item.wand.wood}</li>
-            <li>{item.wand.core}</li>
-            <li>{item.wand.length}</li>
-          </ul>
+          {
+            item.wand.wood !== '' &&
+            item.wand.core !== '' &&
+            item.wand.length !== '' &&
+            <div className='wand'>
+              <h4>Wand</h4>
+              <ul>
+                {item.wand.wood !== '' && <li>{item.wand.wood}</li>}
+                {item.wand.core !== '' && <li>{item.wand.core}</li>}
+                {item.wand.length !== '' && <li>{item.wand.length}</li>}
+              </ul>
+            </div>
+          }
         </div>
       </div>
     );
