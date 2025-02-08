@@ -15,13 +15,18 @@ const cli = new QueryClient({
 
 function App() {
   return (
-    <Suspense fallback={<Loading />}>
-      <ErrorBoundary fallback={<Error />}>
-        <QueryClientProvider client={cli}>
-          <HarryPotter />
-        </QueryClientProvider>
-      </ErrorBoundary>
-    </Suspense>
+    <main>
+      <header>
+        <h1>Harry Potter characters</h1>
+      </header>
+      <Suspense fallback={<Loading />}>
+        <ErrorBoundary fallback={<Error />}>
+          <QueryClientProvider client={cli}>
+            <HarryPotter />
+          </QueryClientProvider>
+        </ErrorBoundary>
+      </Suspense>
+    </main>
   );
 }
 
