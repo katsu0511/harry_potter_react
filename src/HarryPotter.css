@@ -88,8 +88,9 @@ ul {
   margin: 0;
 }
 
-.loading p {
+.loading p, .error p {
   font-size: 24px;
+  font-weight: bold;
   text-align: center;
   line-height: calc(100vh - 60px);
   margin: 0;
