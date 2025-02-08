@@ -31,7 +31,7 @@ main {
 }
 
 .character {
-  background-color: white;
+  background-color: burlywood;
   width: 380px;
   border: solid 1px black;
   box-sizing: border-box;

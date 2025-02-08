@@ -16,7 +16,7 @@ export default function HarryPotter() {
       <div className='character' key={item.id}>
         <div className='top_info'>
           <div className='image_frame'>
-            <img src={item.image} alt={item.name} />
+            <img src={item.image ? item.image : './unknown.jpeg'} alt={item.name} />
           </div>
           <div className='details'>
             <h2>{item.name}</h2>
