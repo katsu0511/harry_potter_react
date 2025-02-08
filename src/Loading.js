@@ -4,7 +4,7 @@ export default function Loading() {
       <header>
         <h1>Harry Potter characters</h1>
       </header>
-      <section className='characters'>
+      <section className='loading'>
         <p>Loading...</p>
       </section>
     </main>

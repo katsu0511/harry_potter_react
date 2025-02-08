@@ -5,6 +5,7 @@ html, body {
 
 #root {
   background-color: antiquewhite;
+  min-height: 100vh;
 }
 
 header {
@@ -84,6 +85,13 @@ h4 {
 }
 
 ul {
+  margin: 0;
+}
+
+.loading p {
+  font-size: 24px;
+  text-align: center;
+  line-height: calc(100vh - 60px);
   margin: 0;
 }
 
